@@ -1,6 +1,12 @@
-import React from 'react';
-import Stopwatch from './src/Stopwatch';
+import React from "react";
+import { StatusBar } from "react-native";
+import Stopwatch from "./src/Stopwatch";
 
 export default function App() {
-  return <Stopwatch />;
+  return (
+    <>
+      <StatusBar barStyle="dark-content" />
+      <Stopwatch />
+    </>
+  );
 }
